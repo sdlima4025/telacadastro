@@ -13,21 +13,21 @@
     </div>
     <div class="rightside">
      <h1>Crie uma conta</h1>
-     <form  method="post" action="cadastro.php" class="b7validator">
+     <form  method="post" action="cadastro.php" class="b7validator"/>
       <label>
         Seu Nome:<br/>
-        <input type="text" name="text" data-rules="required">
+        <input type="text" name="text" data-rules="required|min=2"/>
       </label>
       <label>
         Seu e-mail:<br/>
-        <input type="text" name="email" data-rules="required">
+        <input type="text" name="email" data-rules="required|email"/>
       </label>
       <label>
         Sua senha:<br/>
-        <input type="password" name="password" data-rules="required">
+        <input type="password" name="password" data-rules="required|min=4"/>
       </label>
       <label>
-        <input type="submit" value="Cadastrar" name="cadastrar">
+        <input type="submit" value="Cadastrar" name="cadastrar"/>
       </label>
      </form>
 
